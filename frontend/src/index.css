@@ -1,0 +1,577 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1.0) translateY(0);
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.08) translateY(-4px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.94) translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes gridWarp {
+  0% {
+    transform: rotateX(65deg) scale(1.6) translateY(0);
+  }
+  100% {
+    transform: rotateX(65deg) scale(1.0) translateY(-40px);
+  }
+}
+
+.animate-grid-warp {
+  animation: gridWarp 2s ease-out infinite alternate;
+}
+
+/* 3D Floating & Parallax Perspective Animations */
+@keyframes float3DScene {
+  0% {
+    transform: perspective(1200px) rotateX(3deg) rotateY(-3deg) translateY(0px) scale(1);
+  }
+  50% {
+    transform: perspective(1200px) rotateX(-3deg) rotateY(4deg) translateY(-14px) scale(1.03);
+  }
+  100% {
+    transform: perspective(1200px) rotateX(3deg) rotateY(-3deg) translateY(0px) scale(1);
+  }
+}
+
+.animate-float-3d {
+  animation: float3DScene 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes pulseGoldGlow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1.0);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulseGoldGlow 4s ease-in-out infinite;
+}
+
+.perspective-3d-stage {
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+body {
+  background-color: #0a0d14;
+  color: #e2e8f0;
+}
+
+/* Custom 3D Tilt Perspective & Darkish Vignette Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.card-3d-wrapper {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d-wrapper:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+}
+
+.dark-vignette-side {
+  box-shadow: inset 0 0 100px rgba(10, 13, 20, 0.95), 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Glassmorphism elements */
+.glass-panel {
+  background: rgba(18, 23, 34, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(26, 22, 14, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 184, 0, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0d14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d99b00;
+}
+
+/* Hide scrollbars completely for full-page slide deck & overlays */
+.no-scrollbar::-webkit-scrollbar,
+body.hide-scrollbar::-webkit-scrollbar,
+html.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar,
+body.hide-scrollbar,
+html.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Custom Dropdown Fixed Height Scrollbar */
+.custom-dropdown-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-dropdown-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-dropdown-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 9999px;
+}
+.custom-dropdown-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.8);
+}
+
+
+/* Iconic Vecteezy 3D Hand Cursor Live Click Animation */
+@keyframes vecteezy-click {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 12px rgba(220, 38, 38, 0.5));
+  }
+  30% {
+    transform: translate(-4px, -6px) scale(1.02) rotate(-5deg);
+  }
+  42% {
+    transform: translate(-8px, -4px) scale(0.80) rotate(-10deg);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 20px rgba(239, 68, 68, 0.95));
+  }
+  58% {
+    transform: translate(-8px, -4px) scale(0.80) rotate(-10deg);
+  }
+  78% {
+    transform: translate(0px, 0px) scale(1.05) rotate(2deg);
+  }
+}
+
+.animate-vecteezy-click {
+  animation: vecteezy-click 1.7s infinite cubic-bezier(0.25, 1, 0.5, 1);
+  transform-origin: 25% 15%;
+}
+
+@keyframes click-burst-ring {
+  0%, 35% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  42% {
+    transform: scale(0.5);
+    opacity: 1;
+    border-color: rgba(239, 68, 68, 1);
+  }
+  75% {
+    transform: scale(2.8);
+    opacity: 0;
+    border-color: rgba(245, 158, 11, 0);
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+.animate-click-burst-ring {
+  animation: click-burst-ring 1.7s infinite cubic-bezier(0, 0.2, 0.8, 1);
+}
+
+/* Flashy Event Border Shimmer & Glowing Beams */
+@keyframes animatedBorderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.flashy-gradient-border {
+  position: relative;
+  background: linear-gradient(90deg, #f59e0b, #ef4444, #ec4899, #8b5cf6, #3b82f6, #10b981, #f59e0b);
+  background-size: 300% 300%;
+  animation: animatedBorderGlow 4s ease infinite;
+  padding: 3px;
+  border-radius: 1.5rem;
+}
+
+@keyframes flashBlink {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.9)) drop-shadow(0 0 30px rgba(239, 68, 68, 0.8));
+  }
+  50% {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.3));
+  }
+}
+
+.animate-flash-blink {
+  animation: flashBlink 1.2s ease-in-out infinite;
+}
+
+@keyframes festiveSparkle {
+  0%, 100% {
+    transform: scale(0.85) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.25) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.animate-festive-sparkle {
+  animation: festiveSparkle 2.2s ease-in-out infinite;
+}
+
+
+/* Infinite Marquee Ticker Styles */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Page Landing Text Reveal Animation */
+@keyframes landingTextReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-landing-text {
+  animation: landingTextReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-landing-text-delay-1 {
+  animation: landingTextReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+  opacity: 0;
+}
+
+.animate-landing-text-delay-2 {
+  animation: landingTextReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+  opacity: 0;
+}
+
+/* Continuous Support Us Button Glow & Press Pulse Effect */
+@keyframes buttonContinuousGlow {
+  0%, 100% {
+    box-shadow: 0 0 16px rgba(239, 68, 68, 0.75), 0 0 32px rgba(220, 38, 38, 0.45), inset 0 0 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(239, 68, 68, 1), 0 0 55px rgba(245, 158, 11, 0.75), inset 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+  }
+}
+
+.animate-continuous-glow {
+  animation: buttonContinuousGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes continuousShimmer {
+  0% {
+    transform: translateX(-140%) skewX(-15deg);
+  }
+  40%, 100% {
+    transform: translateX(220%) skewX(-15deg);
+  }
+}
+
+.animate-continuous-shimmer {
+  animation: continuousShimmer 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Festive Live Shifting Color Background & Border Animation */
+@keyframes festiveLiveGradient {
+  0% {
+    background-position: 0% 50%;
+    border-color: rgba(245, 158, 11, 0.9);
+    box-shadow: 0 0 35px rgba(245, 158, 11, 0.6), 0 0 70px rgba(225, 29, 72, 0.4);
+  }
+  25% {
+    background-position: 50% 100%;
+    border-color: rgba(225, 29, 72, 0.9);
+    box-shadow: 0 0 35px rgba(225, 29, 72, 0.6), 0 0 70px rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    background-position: 100% 50%;
+    border-color: rgba(16, 185, 129, 0.9);
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.6), 0 0 70px rgba(14, 165, 233, 0.4);
+  }
+  75% {
+    background-position: 50% 0%;
+    border-color: rgba(168, 85, 247, 0.9);
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.6), 0 0 70px rgba(245, 158, 11, 0.4);
+  }
+  100% {
+    background-position: 0% 50%;
+    border-color: rgba(245, 158, 11, 0.9);
+    box-shadow: 0 0 35px rgba(245, 158, 11, 0.6), 0 0 70px rgba(225, 29, 72, 0.4);
+  }
+}
+
+.animate-festive-live-gradient {
+  background-size: 300% 300%;
+  animation: festiveLiveGradient 6s ease-in-out infinite;
+}
+
+/* Falling Confetti Animation */
+@keyframes fallingConfetti {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(800px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.animate-confetti-fall {
+  animation: fallingConfetti linear infinite;
+}
+
+/* Live Badge Pulsing Radar Glow Ring */
+@keyframes livePulseRing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.8);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 14px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.animate-live-pulse-ring {
+  animation: livePulseRing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+/* STRICT MEDIA & PRIVACY SECURITY RULES (ANTI-DOWNLOAD, ANTI-SCREENSHOT & ANTI-PRINT) */
+img, video, canvas {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
+  pointer-events: none !important;
+}
+
+/* Blackout completely on Print / PDF export / Screen capture print drivers */
+@media print {
+  html, body, #root {
+    display: none !important;
+    visibility: hidden !important;
+    background-color: #000000 !important;
+  }
+}
+
+
+/* Custom Liquid Neon Border Glow */
+@keyframes spinLiquid {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card-liquid-border {
+  position: relative;
+  border: none !important;
+}
+
+.card-liquid-border::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(
+    from 90deg,
+    transparent 0%,
+    rgba(6, 182, 212, 0.1) 20%,
+    rgba(6, 182, 212, 1) 40%,
+    rgba(59, 130, 246, 1) 50%,
+    rgba(139, 92, 246, 1) 60%,
+    transparent 80%
+  );
+  animation: spinLiquid 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-liquid-border.ngo-glow::before {
+  background: conic-gradient(
+    from 90deg,
+    transparent 0%,
+    rgba(239, 68, 68, 0.1) 20%,
+    rgba(239, 68, 68, 1) 40%,
+    rgba(245, 158, 11, 1) 50%,
+    rgba(236, 72, 153, 1) 60%,
+    transparent 80%
+  );
+}
+
+.card-liquid-border:hover::before {
+  opacity: 1;
+}
+
+.card-liquid-inner {
+  position: absolute;
+  inset: 3px;
+  border-radius: calc(1.5rem - 3px); /* Match 3xl radius minus inset */
+  z-index: 1;
+  /* Let the parent's background color show through by inheriting, or we set it manually */
+}
+
+/* Custom Liquid Neon Border Glow - Improved */
+@keyframes spinLiquid {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card-liquid-border {
+  position: relative;
+  border: none !important;
+  overflow: hidden;
+}
+
+.card-liquid-border::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(
+    from 90deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(6, 182, 212, 1) 45%,
+    rgba(139, 92, 246, 1) 50%,
+    rgba(6, 182, 212, 1) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  animation: spinLiquid 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-liquid-border.ngo-glow::before {
+  background: conic-gradient(
+    from 90deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(239, 68, 68, 1) 45%,
+    rgba(245, 158, 11, 1) 50%,
+    rgba(239, 68, 68, 1) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+}
+
+.card-liquid-border:hover::before {
+  opacity: 1;
+}
+
+.card-liquid-inner {
+  position: absolute;
+  inset: 2.5px;
+  border-radius: calc(1.5rem - 2.5px);
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+/* Additional Liquid Flow Theme */
+.card-liquid-border.corp-glow::before {
+  background: conic-gradient(
+    from 90deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(245, 158, 11, 1) 45%, /* Amber 500 */
+    rgba(251, 191, 36, 1) 50%, /* Amber 400 */
+    rgba(245, 158, 11, 1) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+}
+
+.dark-liquid-visible::before {
+  opacity: 0.25; /* Always slightly visible in dark mode */
+}
+.card-liquid-border.dark-liquid-visible:hover::before {
+  opacity: 1;
+}
