@@ -1161,7 +1161,7 @@ export default function GirishMemorialPortal({ onNavigate, activeSubTab = 'overv
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
                 {/* Header */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-6 relative z-10">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative z-10">
                   <div className="space-y-1.5">
                     <span className="text-[10px] font-black uppercase tracking-widest text-red-500 px-3 py-1 rounded-full bg-red-950/80 border border-red-800/60 inline-flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5 text-red-500" />
@@ -1184,81 +1184,6 @@ export default function GirishMemorialPortal({ onNavigate, activeSubTab = 'overv
                   </button>
                 </div>
 
-                {/* 10 Entities Balanced 2-Column Luxury Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 relative z-10">
-                  {ENTERPRISES.map((ent, idx) => (
-                    <div
-                      key={ent.id}
-                      onClick={() => {
-                        if (ent.isNGO && onNavigate) {
-                          onNavigate('home');
-                        } else if (ent.website) {
-                          window.open(ent.website, '_blank');
-                        } else {
-                          switchTab('enterprises');
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }
-                      }}
-                      className={`p-5 rounded-2xl border transition-all duration-300 group cursor-pointer flex flex-col justify-between space-y-4 ${
-                        (ent.isNGO || ent.website)
-                          ? 'bg-gradient-to-r from-amber-950/60 via-slate-900 to-amber-950/40 border-2 border-amber-500/60 shadow-xl hover:border-amber-400 hover:shadow-[0_0_30px_rgba(245,158,11,0.6)] ring-1 ring-amber-500/30'
-                          : 'bg-slate-900/90 border-slate-800 hover:border-red-500/50 hover:bg-slate-800/90'
-                      }`}
-                    >
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className={`text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${
-                            (ent.isNGO || ent.website) ? 'bg-amber-400/20 text-amber-300 border-amber-400/40' : 'bg-red-950/60 text-red-400 border-red-800/40'
-                          }`}>
-                            #{idx + 1} • {ent.est}
-                          </span>
-                          <span className="text-[10px] font-extrabold text-slate-400 flex items-center gap-1">
-                            <MapPin className="w-3 h-3 text-red-500" />
-                            {ent.location}
-                          </span>
-                        </div>
-
-                        <div>
-                          <h4 className={`text-base font-black font-serif flex items-center gap-2 group-hover:translate-x-0.5 transition-transform ${
-                            (ent.isNGO || ent.website) ? 'text-amber-300' : 'text-white group-hover:text-red-400'
-                          }`}>
-                            {ent.isNGO && <Heart className="w-4 h-4 text-red-500 fill-red-500 shrink-0" />}
-                            <span>{ent.name}</span>
-                          </h4>
-                          <div className={`text-xs font-extrabold mt-0.5 ${(ent.isNGO || ent.website) ? 'text-amber-400' : 'text-slate-400'}`}>
-                            {ent.tag}
-                          </div>
-                        </div>
-
-                        <p className="text-xs text-slate-400 leading-relaxed font-sans line-clamp-2">
-                          {ent.desc}
-                        </p>
-                      </div>
-
-                      <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                        <div className="flex flex-wrap gap-1.5">
-                          {ent.metrics.slice(0, 2).map((m, mIdx) => (
-                            <span key={mIdx} className="px-2 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-slate-300 border border-slate-700">
-                              {m}
-                            </span>
-                          ))}
-                        </div>
-
-                        {(ent.isNGO || ent.website) ? (
-                          <span className="px-3 py-1 rounded-lg bg-amber-500 text-slate-950 font-black text-[11px] uppercase tracking-wider flex items-center gap-1 shadow-md hover:bg-amber-400 transition-colors">
-                            <span>{ent.isNGO ? 'Visit NGO' : 'Visit Website'}</span>
-                            <ExternalLink className="w-3 h-3" />
-                          </span>
-                        ) : (
-                          <span className="text-slate-500 group-hover:text-red-400 font-extrabold text-[11px] flex items-center gap-1">
-                            <span>Details</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </section>
 
