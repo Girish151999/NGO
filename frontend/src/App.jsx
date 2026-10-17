@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import VideoModal from './components/VideoModal';
 import AIChatbot from './components/AIChatbot';
 import TributeIntroSequence from './components/TributeIntroSequence';
-import UpcomingEventModal from './components/UpcomingEventModal';
 import Portal3DTransitionOverlay from './components/Portal3DTransitionOverlay';
 import MediaProtectionGuard from './components/MediaProtectionGuard';
 
@@ -62,7 +61,6 @@ export default function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isTributeOpen, setIsTributeOpen] = useState(true);
-  const [isUpcomingEventModalOpen, setIsUpcomingEventModalOpen] = useState(false);
   const [isPortalTransitioning, setIsPortalTransitioning] = useState(false);
   const [activeVideoData, setActiveVideoData] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -301,30 +299,8 @@ export default function App() {
 
       <TributeIntroSequence
         isOpen={isTributeOpen}
-        onClose={() => {
-          setIsTributeOpen(false);
-          setIsUpcomingEventModalOpen(true);
-        }}
+        onClose={() => setIsTributeOpen(false)}
         isLight={theme === 'light'}
-      />
-
-      <UpcomingEventModal
-        isOpen={isUpcomingEventModalOpen}
-        onClose={() => setIsUpcomingEventModalOpen(false)}
-        onOpenDonate={handleOpenDonate}
-        onNavigateToAnnouncement={() => {
-          setIsUpcomingEventModalOpen(false);
-          if (activePage !== 'home') {
-            handleNavigate('home');
-          }
-          setTimeout(() => {
-            const el = document.getElementById('announcement-section');
-            if (el) {
-              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-          }, 150);
-        }}
-        theme={theme}
       />
 
       <Portal3DTransitionOverlay isTransitioning={isPortalTransitioning} />
