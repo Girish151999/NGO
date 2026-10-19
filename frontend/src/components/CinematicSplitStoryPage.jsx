@@ -27,7 +27,7 @@ const CATEGORIES = [
   { id: "NATCON 23", label: "V. NATCON'23", icon: Sparkles },
   { id: "Job Fair 24", label: "VI. Job Fair'24", icon: Sparkles },
   { id: "Coaltrans Asia 24", label: "VII. Coaltrans Conferences Asia'24", icon: Sparkles },
-  { id: "Dubai UAE 26", label: "VIII. Dubai UAE 26", icon: Sparkles }
+  { id: "Dubai UAE 26", label: "IX. Dubai'26", icon: Sparkles }
 ];
 
 
@@ -179,9 +179,9 @@ const STORY_ITEMS = [
       "category": "VIT Pune",
       "categoryCode": "3_vit_pune",
       "date": "2017 - 2021",
-      "location": "Vishwakarma University, Pune",
+      "location": "Vishwakarma Institute of Technology, Pune",
       "url": "/assets/girish_memorial/vit_pune/1.png",
-      "desc": "A project presentation at Vishwakarma University, Pune, with his teammates by his side.",
+      "desc": "A project presentation at Vishwakarma Institute of Technology, Pune, with his teammates by his side.",
       "impact": [
         "Publicity Team",
         "Social Team"
@@ -195,7 +195,7 @@ const STORY_ITEMS = [
       "category": "VIT Pune",
       "categoryCode": "3_vit_pune",
       "date": "2017 - 2021",
-      "location": "Vishwakarma University, Pune",
+      "location": "Vishwakarma Institute of Technology, Pune",
       "url": "/assets/girish_memorial/vit_pune/2.png",
       "desc": "A college event to help elders learn to use smartphones and laptops, making technology more accessible.",
       "impact": [
@@ -244,7 +244,7 @@ const STORY_ITEMS = [
       "date": "2021 - 2023",
       "location": "TIAA Corporate Headquarters",
       "url": "/assets/girish_memorial/corporate/tiaa_team_wetnjoy.jpg",
-      "desc": "A candid selfie with colleagues who were part of his early professional journey.",
+      "desc": "A memorable trip with colleagues who became family at TIAA",
       "impact": [
         "Corporate Leadership"
       ],
@@ -477,14 +477,14 @@ const STORY_ITEMS = [
   },
   {
     "id": "7_dubai__25-1",
-    "title": "8. Dubai UAE 26 — Moment #1",
+    "title": "Advancing New Opportunities",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/1.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #1).",
+    "desc": "Girish in Dubai from 22 to 27 February 2026, working towards finalizing a raw sulphur shipment deal for Gsinfotechvis's commodity trading services.",
     "impact": [
       "UAE Global Office"
     ],
@@ -492,14 +492,14 @@ const STORY_ITEMS = [
   },
   {
     "id": "7_dubai__25-2",
-    "title": "8. Dubai UAE 26 — Moment #2",
+    "title": "Becoming Who He Envisioned",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/2.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #2).",
+    "desc": "Never one to settle for the ordinary. A little glimpse of the ambition, character, and individuality that made Girish who he was.",
     "impact": [
       "UAE Global Office"
     ],
@@ -507,14 +507,14 @@ const STORY_ITEMS = [
   },
   {
     "id": "7_dubai__25-3",
-    "title": "8. Dubai UAE 26 — Moment #3",
+    "title": "Business Discussions",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/3.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #3).",
+    "desc": "Girish with a business contact during one of his meetings in Dubai.",
     "impact": [
       "UAE Global Office"
     ],
@@ -522,14 +522,14 @@ const STORY_ITEMS = [
   },
   {
     "id": "7_dubai__25-4",
-    "title": "8. Dubai UAE 26 — Moment #4",
+    "title": "Building Business Connections",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/4.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #4).",
+    "desc": "Girish with two business associates during his visit, strengthening professional relationships.",
     "impact": [
       "UAE Global Office"
     ],
@@ -537,14 +537,14 @@ const STORY_ITEMS = [
   },
   {
     "id": "7_dubai__25-5",
-    "title": "8. Dubai UAE 26 — Moment #5",
+    "title": "His Signature Briefcase",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/5.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #5).",
+    "desc": "Always by his side, a small but unmistakable part of Girish everyday professional life.",
     "impact": [
       "UAE Global Office"
     ],

@@ -104,7 +104,7 @@ const LIFE_TIMELINE_STORY = [
   {
     year: '1999',
       badge: '15 March 1999',
-      title: 'I. The Little Years',
+      title: 'A Star Is Born',
       subtitle: 'Where his beautiful story began.',
       desc: (
         <>
@@ -169,7 +169,7 @@ const LIFE_TIMELINE_STORY = [
     year: '2023',
     badge: 'Age 24 Entrepreneurial Leap',
     title: 'The Leap of Faith',
-    subtitle: 'Founding Gsinfotechvis Pvt Ltd (2021)',
+    subtitle: 'Founding Gsinfotechvis Pvt Ltd (2023)',
     desc: (
       <>
         At just <strong className="font-extrabold text-[#0a192f] dark:text-amber-400">24 years old</strong>, Girish made a decision that many only dream of making — <strong className="font-extrabold text-[#0a192f] dark:text-amber-400">he walked away from the security of a successful corporate career</strong> to build something of his own. Guided by a vision to provide innovative and dependable technology solutions, he founded <strong className="font-extrabold text-[#0a192f] dark:text-amber-400">Gsinfotechvis Pvt Ltd</strong>, marking the beginning of an entrepreneurial journey that would soon extend far beyond IT services.
@@ -2148,7 +2148,7 @@ export default function GirishMemorialPortal({ onNavigate, activeSubTab = 'overv
                   <span>Founding Gsinfotechvis & USA Expansion (Age 24)</span>
                 </h4>
                 <p>
-                  Driven by a desire to build solutions of his own, Girish took a bold step at the age of 24 by leaving his full-time corporate career to pursue entrepreneurship. This vision led to the establishment of <strong className={isDarkMode ? 'text-white' : 'text-slate-900'}>Gsinfotechvis Pvt. Ltd. in 2021</strong>, a company focused on delivering IT services, digital solutions, staffing, recruitment, consulting, and emerging technology services. Under his leadership, Gsinfotechvis expanded beyond India and established its international presence through <strong className={isDarkMode ? 'text-white' : 'text-slate-900'}>Gsinfotechvis Global LLC, USA</strong>, enabling the organization to serve clients across global markets and strengthen international IT recruitment capabilities.
+                  Driven by a desire to build solutions of his own, Girish took a bold step at the age of 24 by leaving his full-time corporate career to pursue entrepreneurship. This vision led to the establishment of <strong className={isDarkMode ? 'text-white' : 'text-slate-900'}>Gsinfotechvis Pvt. Ltd. in 2023</strong>, a company focused on delivering IT services, digital solutions, staffing, recruitment, consulting, and emerging technology services. Under his leadership, Gsinfotechvis expanded beyond India and established its international presence through <strong className={isDarkMode ? 'text-white' : 'text-slate-900'}>Gsinfotechvis Global LLC, USA</strong>, enabling the organization to serve clients across global markets and strengthen international IT recruitment capabilities.
                 </p>
               </div>
 

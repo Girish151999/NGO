@@ -178,7 +178,7 @@ export const CATEGORIZED_MEMORIAL_PHOTOS = [
     "categoryLabel": "4. TIAA Photos & Executive Leadership",
     "year": "2022",
     "isVideo": false,
-    "desc": "TIAA corporate executive leadership visual archive photo #2."
+    "desc": "A memorable trip with colleagues who became family at TIAA."
   },
   {
     "id": 122,
@@ -343,52 +343,52 @@ export const CATEGORIZED_MEMORIAL_PHOTOS = [
   {
     "id": 135,
     "src": "/assets/girish_memorial/dubai/1.jpg",
-    "title": "Dubai 26 Global Operations & Summits — Photo #1",
+    "title": "Advancing New Opportunities",
     "category": "dubai",
     "categoryLabel": "8. Dubai_26",
     "year": "2026",
     "isVideo": false,
-    "desc": "GILS Global LLC UAE operations & international summit memory #1."
+    "desc": "Girish in Dubai from 22 to 27 February 2026, working towards finalizing a raw sulphur shipment deal for Gsinfotechvis's commodity trading services."
   },
   {
     "id": 136,
     "src": "/assets/girish_memorial/dubai/2.jpg",
-    "title": "Dubai 26 Global Operations & Summits — Photo #2",
+    "title": "Becoming Who He Envisioned",
     "category": "dubai",
     "categoryLabel": "8. Dubai_26",
     "year": "2026",
     "isVideo": false,
-    "desc": "GILS Global LLC UAE operations & international summit memory #2."
+    "desc": "Never one to settle for the ordinary. A little glimpse of the ambition, character, and individuality that made Girish who he was."
   },
   {
     "id": 137,
     "src": "/assets/girish_memorial/dubai/3.jpg",
-    "title": "Dubai 26 Global Operations & Summits — Photo #3",
+    "title": "Business Discussions",
     "category": "dubai",
     "categoryLabel": "8. Dubai_26",
     "year": "2026",
     "isVideo": false,
-    "desc": "GILS Global LLC UAE operations & international summit memory #3."
+    "desc": "Girish with a business contact during one of his meetings in Dubai."
   },
   {
     "id": 138,
     "src": "/assets/girish_memorial/dubai/4.jpg",
-    "title": "Dubai 26 Global Operations & Summits — Photo #4",
+    "title": "Building Business Connections",
     "category": "dubai",
     "categoryLabel": "8. Dubai_26",
     "year": "2026",
     "isVideo": false,
-    "desc": "GILS Global LLC UAE operations & international summit memory #4."
+    "desc": "Girish with two business associates during his visit, strengthening professional relationships."
   },
   {
     "id": 139,
     "src": "/assets/girish_memorial/dubai/5.jpg",
-    "title": "Dubai 26 Global Operations & Summits — Photo #5",
+    "title": "His Signature Briefcase",
     "category": "dubai",
     "categoryLabel": "8. Dubai_26",
     "year": "2026",
     "isVideo": false,
-    "desc": "GILS Global LLC UAE operations & international summit memory #5."
+    "desc": "Always by his side, a small but unmistakable part of Girish everyday professional life."
   },
   {
     "id": 150,

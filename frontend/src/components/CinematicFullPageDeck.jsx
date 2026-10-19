@@ -13,7 +13,8 @@ import {
   Filter,
   Film,
   ChevronUp,
-  ChevronDown
+  ChevronDown,
+  Maximize2
 } from 'lucide-react';
 
 const CATEGORIES = [
@@ -24,7 +25,7 @@ const CATEGORIES = [
   { id: "NATCON 23", label: "V. NATCON'23" },
   { id: "Job Fair 24", label: "VI. Job Fair'24" },
   { id: "Coaltrans Asia 24", label: "VII. Coaltrans Conferences Asia'24" },
-  { id: "Dubai UAE 26", label: "VIII. Dubai UAE 26" }
+  { id: "Dubai UAE 26", label: "IX. Dubai'26" }
 ];
 
 const TORN_PAPER_POLYGON = 'polygon(0% 12px, 3% 2px, 6% 14px, 9% 0px, 12% 10px, 15% 3px, 18% 15px, 21% 1px, 24% 12px, 27% 2px, 30% 14px, 33% 0px, 36% 11px, 39% 3px, 42% 15px, 45% 1px, 48% 12px, 51% 2px, 54% 14px, 57% 0px, 60% 10px, 63% 3px, 66% 15px, 69% 1px, 72% 12px, 75% 2px, 78% 14px, 81% 0px, 84% 11px, 87% 3px, 90% 15px, 93% 1px, 96% 12px, 100% 0px, calc(100% - 2px) 4%, 100% 8%, calc(100% - 14px) 12%, 100% 16%, calc(100% - 3px) 20%, 100% 24%, calc(100% - 15px) 28%, 100% 32%, calc(100% - 2px) 36%, 100% 40%, calc(100% - 14px) 44%, 100% 48%, calc(100% - 3px) 52%, 100% 56%, calc(100% - 15px) 60%, 100% 64%, calc(100% - 2px) 68%, 100% 72%, calc(100% - 14px) 76%, 100% 80%, calc(100% - 3px) 84%, 100% 88%, calc(100% - 15px) 92%, 100% 96%, calc(100% - 2px) 100%, 97% calc(100% - 12px), 94% 100%, 91% calc(100% - 3px), 88% 100%, 85% calc(100% - 15px), 82% 100%, 79% calc(100% - 2px), 76% 100%, 73% calc(100% - 14px), 70% 100%, 67% calc(100% - 3px), 64% 100%, 61% calc(100% - 15px), 58% 100%, 55% calc(100% - 2px), 52% 100%, 49% calc(100% - 14px), 46% 100%, 43% calc(100% - 3px), 40% 100%, 37% calc(100% - 15px), 34% 100%, 31% calc(100% - 2px), 28% 100%, 25% calc(100% - 14px), 22% 100%, 19% calc(100% - 3px), 16% 100%, 13% calc(100% - 15px), 10% 100%, 7% calc(100% - 2px), 4% 100%, 0% calc(100% - 12px), 2px 96%, 14px 92%, 0px 88%, 10px 84%, 3px 80%, 15px 76%, 1px 72%, 12px 68%, 2px 64%, 14px 60%, 0px 56%, 11px 52%, 3px 48%, 15px 44%, 1px 40%, 12px 36%, 2px 32%, 14px 28%, 0px 24%, 10px 20%, 3px 16%, 15px 12%, 1px 8%, 12px 4%)';
@@ -181,9 +182,9 @@ const STORY_SLIDES = [
       "category": "VIT Pune",
       "categoryCode": "3_vit_pune",
       "date": "2017 - 2021",
-      "location": "Vishwakarma University, Pune",
+      "location": "Vishwakarma Institute of Technology, Pune",
       "url": "/assets/girish_memorial/vit_pune/1.png",
-      "desc": "A project presentation at Vishwakarma University, Pune, with his teammates by his side.",
+      "desc": "A project presentation at Vishwakarma Institute of Technology, Pune, with his teammates by his side.",
       "impact": [
         "Publicity Team",
         "Social Team"
@@ -197,7 +198,7 @@ const STORY_SLIDES = [
       "category": "VIT Pune",
       "categoryCode": "3_vit_pune",
       "date": "2017 - 2021",
-      "location": "Vishwakarma University, Pune",
+      "location": "Vishwakarma Institute of Technology, Pune",
       "url": "/assets/girish_memorial/vit_pune/2.png",
       "desc": "A college event to help elders learn to use smartphones and laptops, making technology more accessible.",
       "impact": [
@@ -246,7 +247,7 @@ const STORY_SLIDES = [
       "date": "2021 - 2023",
       "location": "TIAA Corporate Headquarters",
       "url": "/assets/girish_memorial/corporate/tiaa_team_wetnjoy.jpg",
-      "desc": "A candid selfie with colleagues who were part of his early professional journey.",
+      "desc": "A memorable trip with colleagues who became family at TIAA",
       "impact": [
         "Corporate Leadership"
       ],
@@ -479,14 +480,14 @@ const STORY_SLIDES = [
   },
   {
     "id": "7_dubai__25-1",
-    "title": "8. Dubai UAE 26 — Moment #1",
+    "title": "Advancing New Opportunities",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/1.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #1).",
+    "desc": "Girish in Dubai from 22 to 27 February 2026, working towards finalizing a raw sulphur shipment deal for Gsinfotechvis's commodity trading services.",
     "impact": [
       "UAE Global Office"
     ],
@@ -494,14 +495,14 @@ const STORY_SLIDES = [
   },
   {
     "id": "7_dubai__25-2",
-    "title": "8. Dubai UAE 26 — Moment #2",
+    "title": "Becoming Who He Envisioned",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/2.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #2).",
+    "desc": "Never one to settle for the ordinary. A little glimpse of the ambition, character, and individuality that made Girish who he was.",
     "impact": [
       "UAE Global Office"
     ],
@@ -509,14 +510,14 @@ const STORY_SLIDES = [
   },
   {
     "id": "7_dubai__25-3",
-    "title": "8. Dubai UAE 26 — Moment #3",
+    "title": "Business Discussions",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/3.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #3).",
+    "desc": "Girish with a business contact during one of his meetings in Dubai.",
     "impact": [
       "UAE Global Office"
     ],
@@ -524,14 +525,14 @@ const STORY_SLIDES = [
   },
   {
     "id": "7_dubai__25-4",
-    "title": "8. Dubai UAE 26 — Moment #4",
+    "title": "Building Business Connections",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/4.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #4).",
+    "desc": "Girish with two business associates during his visit, strengthening professional relationships.",
     "impact": [
       "UAE Global Office"
     ],
@@ -539,14 +540,14 @@ const STORY_SLIDES = [
   },
   {
     "id": "7_dubai__25-5",
-    "title": "8. Dubai UAE 26 — Moment #5",
+    "title": "His Signature Briefcase",
     "subtitle": "GILS Global LLC UAE Operations",
     "category": "Dubai UAE 26",
     "categoryCode": "7_dubai__25",
     "date": "2026",
     "location": "Dubai, UAE International Headquarters",
     "url": "/assets/girish_memorial/dubai/5.jpg",
-    "desc": "Expanding GILS Global LLC in Dubai UAE for overseas manpower deployment across Middle East & Europe (Photo #5).",
+    "desc": "Always by his side, a small but unmistakable part of Girish everyday professional life.",
     "impact": [
       "UAE Global Office"
     ],
@@ -975,9 +976,11 @@ export default function CinematicFullPageDeck({ isOpen, onClose }) {
                   decoding="async"
                 />
 
-                {/* Protective Invisible Shield Overlay (Blocks direct right-click & dragging) */}
+                {/* Protective Shield Overlay & Click to open Fullscreen Lightbox on Desktop */}
                 <div 
-                  className="absolute inset-0 z-25 pointer-events-auto select-none"
+                  className="absolute inset-0 z-25 pointer-events-auto select-none cursor-zoom-in"
+                  onClick={() => setMobileLightboxIndex(currentIndex)}
+                  title="Click to view full photo and details"
                   onContextMenu={(e) => { e.preventDefault(); e.stopPropagation(); }}
                   onDragStart={(e) => { e.preventDefault(); e.stopPropagation(); }}
                 />
@@ -1260,16 +1263,16 @@ export default function CinematicFullPageDeck({ isOpen, onClose }) {
             </div>
           )}
 
-          {/* MOBILE FULLSCREEN 3D LIGHTBOX VIEWER WITH BLURRED BACKGROUND PHOTOS & SIDE NAV BUTTONS */}
+          {/* FULLSCREEN 3D LIGHTBOX VIEWER WITH BLURRED BACKGROUND PHOTOS & SIDE NAV BUTTONS (DESKTOP & MOBILE) */}
           {mobileLightboxIndex !== null && filteredSlides[mobileLightboxIndex] && (
             <div 
               onClick={() => setMobileLightboxIndex(null)}
-              className="lg:hidden fixed inset-0 z-[120] bg-slate-950/98 backdrop-blur-2xl flex flex-col justify-between p-3 select-none overflow-hidden animate-fadeIn"
+              className="fixed inset-0 z-[120] bg-slate-950/98 backdrop-blur-2xl flex flex-col justify-between p-3 sm:p-5 lg:p-6 select-none overflow-hidden animate-fadeIn"
             >
               {/* Top Bar Header */}
               <div 
                 onClick={(e) => e.stopPropagation()}
-                className="flex items-center justify-between border-b border-slate-800 pb-2.5 z-30 shrink-0"
+                className="flex items-center justify-between border-b border-slate-800 pb-2.5 z-30 shrink-0 max-w-5xl mx-auto w-full"
               >
                 <div className="space-y-0.5 max-w-[70vw]">
                   <span className="text-[9px] font-black uppercase tracking-widest text-amber-400 px-2 py-0.5 rounded-full bg-amber-400/10 border border-amber-400/30">
@@ -1367,16 +1370,18 @@ export default function CinematicFullPageDeck({ isOpen, onClose }) {
               {/* Bottom Caption Info */}
               <div 
                 onClick={(e) => e.stopPropagation()}
-                className="p-3 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-1 z-30 shrink-0 text-left"
+                className="p-3 sm:p-4 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-1 z-30 shrink-0 text-left max-w-4xl mx-auto w-full shadow-2xl"
               >
-                <h4 className="text-xs font-bold text-white leading-snug line-clamp-1 font-serif">
+                <h4 className="text-xs sm:text-sm font-bold text-white leading-snug line-clamp-1 font-serif">
                   {filteredSlides[mobileLightboxIndex].title}
                 </h4>
-                <p className="text-[10px] font-bold text-rose-400 flex items-center gap-1">
-                  <MapPin className="w-3 h-3 text-amber-400 shrink-0" />
-                  <span>{filteredSlides[mobileLightboxIndex].subtitle} • {filteredSlides[mobileLightboxIndex].location}</span>
+                <p className="text-[10px] sm:text-xs font-bold text-rose-400 flex items-center gap-1.5 flex-wrap">
+                  <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-400 shrink-0" />
+                  <span>{filteredSlides[mobileLightboxIndex].subtitle}</span>
+                  <span className="text-slate-500">•</span>
+                  <span className="text-amber-300 font-semibold">{filteredSlides[mobileLightboxIndex].location}</span>
                 </p>
-                <p className="text-[11px] text-slate-300 leading-relaxed line-clamp-2">
+                <p className="text-[11px] sm:text-xs text-slate-300 leading-relaxed line-clamp-2">
                   {filteredSlides[mobileLightboxIndex].desc}
                 </p>
               </div>
@@ -1436,9 +1441,18 @@ export default function CinematicFullPageDeck({ isOpen, onClose }) {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.15, duration: 0.35 }}
-                        className="text-[10px] sm:text-xs font-extrabold text-rose-400 tracking-wide uppercase"
+                        className="text-[10px] sm:text-xs font-extrabold text-rose-400 tracking-wide uppercase flex items-center gap-2 flex-wrap"
                       >
-                        {currentSlide.subtitle}
+                        <span>{currentSlide.subtitle}</span>
+                        {currentSlide.location && (
+                          <>
+                            <span className="text-slate-500">•</span>
+                            <span className="flex items-center gap-1 text-amber-300 normal-case font-semibold">
+                              <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                              {currentSlide.location}
+                            </span>
+                          </>
+                        )}
                       </motion.p>
                     </div>
 
@@ -1453,12 +1467,20 @@ export default function CinematicFullPageDeck({ isOpen, onClose }) {
                           {currentSlide.desc}
                         </p>
                         {currentSlide.impact && currentSlide.impact.length > 0 && (
-                          <div className="pt-2 flex flex-wrap gap-2">
+                          <div className="pt-2 flex flex-wrap items-center gap-2">
                             {currentSlide.impact.map((tag, idx) => (
                               <span key={idx} className="px-2.5 py-1 text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-amber-950 bg-amber-400 rounded shadow-md pointer-events-auto">
                                 {tag}
                               </span>
                             ))}
+                            <button
+                              onClick={() => setMobileLightboxIndex(currentIndex)}
+                              className="px-2.5 py-1 text-[10px] sm:text-[11px] font-bold text-amber-300 hover:text-white bg-slate-900 hover:bg-amber-600/80 border border-amber-500/40 rounded shadow-md pointer-events-auto transition-all flex items-center gap-1.5 cursor-pointer ml-auto"
+                              title="Open Fullscreen Lightbox (Desktop & Mobile)"
+                            >
+                              <Maximize2 className="w-3 h-3" />
+                              <span>View Full Lightbox</span>
+                            </button>
                           </div>
                         )}
                       </motion.div>

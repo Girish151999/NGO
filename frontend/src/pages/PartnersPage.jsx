@@ -90,10 +90,10 @@ const ALL_PARTNERS = [
   {
     id: 'gsinfotechvis-pvt',
     name: 'Gsinfotechvis Pvt Ltd',
-    fullName: 'Gsinfotechvis Pvt Ltd (Est. 2021)',
+    fullName: 'Gsinfotechvis Pvt Ltd (Est. 2023)',
     category: 'IT Services, Software & Coal Trading',
     categoryCode: 'group',
-    description: 'Key player in IT and services sector established in 2021. Offers software solutions, IT staffing, digital marketing, and expanding into coal import/export trading services.',
+    description: 'Key player in IT and services sector established in 2023. Offers software solutions, IT staffing, digital marketing, and expanding into coal import/export trading services.',
     impact: 'Parent Corporate IT & Trading Flagship',
     logoSvg: (
       <div className="h-14 px-3 py-1.5 rounded-xl bg-white border border-slate-200/90 flex items-center justify-center shadow-md overflow-hidden shrink-0">
